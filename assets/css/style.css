@@ -21,37 +21,38 @@ li{
 }
 
 .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100vh;
     background-color: rgb(52, 54, 56);
 }
 
-.header .nav-bar{
-    width: 90%;
+.header nav{
+    position: absolute;
+    top: 0;
+    left: 10vw;
+    width: 80vw;
     height: 80px;
-    margin: auto;
     color: rgb(52, 54, 56);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 80px;
 }
 
-.header .nav-bar .logo{
-    margin-left: 50px;
-}
 
-.header .nav-bar .logo a{
+.header nav .logo a{
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.header .nav-bar .menu ul li{
+.header nav .menu ul li{
     margin-right: 30px;
 }
 
-.header .nav-bar .menu ul li a{
+.header nav .menu ul li a{
     font-size: 16px;
     letter-spacing: 1px;
     padding: 10px;
@@ -61,15 +62,15 @@ li{
     opacity: 0.6;
 }
 
-.header .nav-bar .menu ul li a.active{
+.header nav .menu ul li a.active{
     opacity: 1;
 }
 
-.header .nav-bar .menu ul li a:hover{
+.header nav .menu ul li a:hover{
     opacity: 1;
 }
 
-.header .nav-bar .social-media ul li i{
+.header nav .social-media ul li i{
     width: 45px;
     height: 45px;
     line-height: 45px;
@@ -82,47 +83,42 @@ li{
     transition: all 0.3s ease-in-out;
 }
 
-.header .nav-bar .social-media ul li i:hover{
+.header nav .social-media ul li i:hover{
     background-color: black;
 }
 
 .hero{
-    width: 100%;
-}
-
-.hero .row{
-    width: 90%;
+    width: 80vw;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 50px;
-    margin: auto;
 }
 
-.hero .row .left-sec{
+.hero .left-sec{
     width: 30%;
     margin-top: 100px;
     margin-left: 50px;
 }
 
-.hero .row .left-sec h2{
+.hero .left-sec h2{
     font-size: 75px;
     color: #fff;
     text-transform: capitalize;
 }
 
-.hero .row .left-sec h2 span{
+.hero .left-sec h2 span{
     color: #d43242;
 }
 
-.hero .row .left-sec p{
+.hero .left-sec p{
     margin: 20px 0;
     color: #fff;
     line-height: 28px;
     padding-right: 150px;
 }
 
-.hero .row .left-sec .discover-btn{
+.discover-btn{
     display: flex;
     align-items: center;
     outline: none;
@@ -135,7 +131,7 @@ li{
     box-shadow: 5px 7px 9px #000;
 }
 
-.hero .row .left-sec .discover-btn a{
+.discover-btn a{
     color: #fff;
     font-size: 25px;
     letter-spacing: 2px;
@@ -143,20 +139,26 @@ li{
     text-transform: capitalize;
 }
 
-.hero .row .left-sec .discover-btn span{
+.discover-btn span{
     color: #fff;
     font-size: 45px;
 }
 
-.hero .right-sec img{
-    width: 500px;
-    padding-top: 100px;
+.hero .right-sec .car img{
+    width: 40vw;
+    height: 60vh;
+    object-fit: cover;
 }
 
-.hero .right-sec img{
-    width: 1000px;
-    height: 100x;
-    float: right;
-    float: center;
-    margin-right: 500px;
+.cars{
+    border-radius: 60px;
+    width: 40vw;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.car{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }

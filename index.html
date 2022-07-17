@@ -12,9 +12,9 @@
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
 </head>
  <body>
-      <section class="header" id="header">
-        <div class="nav-bar">
-         <div class="logo">
+    <section class="header" id="header">
+        <nav>
+            <div class="logo">
                 <a href="#">Vintage Car Rally Club</a>
             </div>
             <div class="menu">
@@ -27,48 +27,35 @@
                     <li><a href="#">REGISTER</a></li>
                 </ul>
             </div>
-        <div class="social media">
-            <ul>
-               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-       </div>
-     </div>
-     <div class="hero">
-        <div class="row">
+        </nav>
+        <div class="hero">
             <div class="left-sec">
                 <div class="content">
                     <h2><span>Vintage Rally Club</span><br>mercedes</h2>
                     <p>Classic Vintage Cars</p>
+                    <button class="discover-btn">
+                        <a href="#">discover</a><span><i class="fa fa-arrow-circle-o-right"></i></span>
+                    </button>
                 </div>
-                <button class="discover-btn">
-                    <a href="#">discover</a><span><i class="fa fa-arrow-circle-o-right"></i></span>
-                </button>
-                <div class="right-sec">
-                    <div class="my-car">
-                        <div><img src="img/15_classic_and_sports_car_Paris_2020_auctions_results_Bonhams_1935_Mercedes-Benz_500K_Cabriolet_A.png" alt=""></div>
-                        <div><img src="img/classic-chevrolet.jpg" alt=""></div>
-                        <div><img src="img/IfSgq6.jpg" alt=""></div>
-                        <div><img src="img/352550_33852_41952_zA8CRLb8H.png" alt=""></div>
-                        <div><img src="img/l.jpeg" alt=""></div>
-                        <div><img src="img/benz.jpg" alt=""></div>
-                        <div><img src="img/car2.jpg" alt=""></div>
-                    </div>
-                    
-                          </div>
-                        </div>
-                      </div>
+            </div>
+            <div class="right-sec">
+                <div class="cars">
+                    <div class="car"><img src="assets/img/15_classic_and_sports_car_Paris_2020_auctions_results_Bonhams_1935_Mercedes-Benz_500K_Cabriolet_A.png" alt=""></div>
+                    <div class="car"><img src="assets/img/classic-chevrolet.jpg" alt=""></div>
+                    <div class="car"><img src="assets/img/IfSgq6.jpg" alt=""></div>
+                    <div class="car"><img src="assets/img/352550_33852_41952_zA8CRLb8H.png" alt=""></div>
+                    <div class="car"><img src="assets/img/l.jpeg" alt=""></div>
+                    <div class="car"><img src="assets/img/benz.jpg" alt=""></div>
+                    <div class="car"><img src="assets/img/car2.jpg" alt=""></div>
                 </div>
             </div>
         </div>
-     </div>
    </section>
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
    <script type="text/javascript">
     $(document).ready(function(){
-        $(".my-car").slick({
+        $(".cars").slick({
             autoplay:true,
             dots:true,
             speed:1000,
